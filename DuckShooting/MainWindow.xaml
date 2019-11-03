@@ -1,0 +1,21 @@
+﻿<Window x:Class="DuckShooting.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:DuckShooting"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="450" Width="800">
+    <Grid x:Name="imageBackground" Margin="0,0,0,-50" MouseMove="Grid_MouseMove">
+        <Grid.Background>
+            <ImageBrush ImageSource="Resources/Aero_Grass.jpg"/>
+        </Grid.Background>
+        <Image x:Name="target" HorizontalAlignment="Left" Height="82" Margin="79,273,0,0" VerticalAlignment="Top" Width="80" Source="Resources/target.png
+               " MouseMove="Image_MouseMove" AutomationProperties.Name="target"/>
+        <Image x:Name="duck" HorizontalAlignment="Left" Height="57" VerticalAlignment="Top" Width="74" Source="Resources/duck.png" Margin="615,80,0,0" MouseDown="Duck_MouseDown"/>
+        <Image x:Name="duck1" HorizontalAlignment="Left" Height="57" VerticalAlignment="Top" Width="74" Source="Resources/duck.png" Margin="615,176,0,0" MouseDown="Duck1_MouseDown"/>
+        <Image x:Name="duck2" HorizontalAlignment="Left" Height="57" VerticalAlignment="Top" Width="74" Source="Resources/duck.png" Margin="615,285,0,0" MouseDown="Duck2_MouseDown"/>
+        <Label x:Name="scoreLabel" FontSize="20" Content="" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="79,10,0,0" Width="326" Height="52"/>
+
+    </Grid>
+</Window>
